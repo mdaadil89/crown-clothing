@@ -9,3 +9,5 @@ const middlewares = [logger];
 export const store = createStore(persistReducer,applyMiddleware(...middlewares));
 
 export const persistor = persistStore(store);
+
+export default { store, persistStore };
